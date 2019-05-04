@@ -6,6 +6,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction:column;
+    font-size: 18px;
 }
 #imageHeader{
     display:block;
@@ -19,7 +20,9 @@ body{
     width: 99%;
 }
 #tribute-info{
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90vw;
     height: auto;;
     margin: 20px 0px 40px 5vw  ; 
@@ -57,4 +60,39 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.tribute-main-info{
+    width: 40%;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.tribute-info-item{
+    width: 100%;
+    font-size: 15px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    background-color: #dbe9ff;
+}
+.tribute-info-item-reverse{
+    width: 100%;
+    font-size: 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    background-color: #dbe9ff;
+}
+.item-description{
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+.tribute-info-img{
+    max-width:100%;
+    display: block;
+    height: auto;
 }
