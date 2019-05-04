@@ -1,6 +1,6 @@
 body{
     background-color: #f4f8ff;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 #title{
     display: flex;
@@ -73,8 +73,14 @@ body{
     text-align: justify;
     display: flex;
     justify-content: space-evenly;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom: 40px;
-    background-color: #dbe9ff;
+    transition-duration: 0.3s;
+}
+.tribute-info-item:hover{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgb(252, 255, 79);
 }
 .tribute-info-item-reverse{
     width: 100%;
@@ -84,12 +90,27 @@ body{
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin-bottom: 40px;
-    background-color: #dbe9ff;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.3s;
+}
+.tribute-info-item-reverse:hover{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgb(252, 255, 79);
 }
 .item-description{
     width: 40%;
+    display: flex;
+    flex-direction: column;
     height: auto;
-    position: relative;
+}
+.item-description h3, .item-description h4 {
+    display: flex;
+    margin: 0;
+}
+.filme-title{
+    display: flex;
+    flex-direction: column;
 }
 .tribute-info-img{
     max-width:100%;
